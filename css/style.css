@@ -93,4 +93,18 @@ ul {
   transition: background-color 2s ease-out;
 }
 
-/* ***** 
+/* ***** MEDIA QUERIES FOR LARGE SCREENS ***** */
+@media(min-width:700px) { /* for screen sizes GREATER than 700 px */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding: 2em;
+  }
+
+  .company-info h3, .company-info ul, .brand {
+    text-align: left;
+  } 
+}
